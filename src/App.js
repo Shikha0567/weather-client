@@ -8,7 +8,7 @@ function App() {
 
   const fetchWeather = async () => {
     try {
-      const { data } = await axios.get(`http://localhost:5001/api/weather/${city}`);
+      const { data } = await axios.get(`https://regal-souffle-ace071.netlify.app/api/weather/${city}`);
       setWeather(data);
     } catch (error) {
       console.error(error);
